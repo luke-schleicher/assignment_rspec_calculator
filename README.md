@@ -4,4 +4,4 @@
 
 [A Ruby and RSpec testing assignment from the Viking Code School](http://www.vikingcodeschool.com)
 
-Completed By Luke Schleicher
+Completed By Luke Schleicher and James Harris
