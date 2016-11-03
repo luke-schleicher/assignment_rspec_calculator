@@ -136,13 +136,18 @@ describe Calculator do
 
   describe '#stringify' do
 
-    
-    
+    it "returns the outputs of our calculator methods as strings when passed to a new calculator" do
+      stringify_calc = Calculator.new(:stringify)
+      results = []
+      results << stringify_calc.add(2,2)
+      results << stringify_calc.subtract(2,2)
+      results << stringify_calc.multiply(2,2)
+      results << stringify_calc.divide(2,2)
+      results << stringify_calc.pow(2,2)
+      results << stringify_calc.sqrt(9)
+      expect(results.all? { |result| result.is_a? String }).to be_truthy
+    end
+
   end
 
 end
-
-
-
-
-
